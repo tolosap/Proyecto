@@ -75,8 +75,27 @@ li{
   margin-top: 25%;
   text-align: center;
 }
-#botonVerMas{
-  position: relative;
-  margin-top: 20%;
-  margin-left: 25%;
+/*Damos estilo al boton que va bajo de el parrafo de la pagina principal*/
+.myButton {
+	background-color:transparent;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:24px;
+	padding:14px 55px;
+	text-decoration:none;
+  margin-top: 2%;
+}
+.myButton:hover {
+   background: rgba(179, 179, 179, .1);
+   color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
