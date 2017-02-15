@@ -106,7 +106,7 @@ li{
 
 /*Ponemos color al separador 1 y le damos altura:*/
 .separadorInicioPresentacion{
-  padding: 1% 0 1% 0;
+  padding: 0.7% 0 0.7% 0;
   /*background-color: #458c91;*/
   background-color: black;
   opacity: 0.9;
