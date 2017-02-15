@@ -101,3 +101,86 @@ li{
 	position:relative;
 	top:1px;
 }
+
+/*Ponemos color al separador y le damos altura:*/
+.separadorInicioPresentacion{
+  padding: 2.5% 0 2.5% 0;
+  background-color: #458c91;
+  text-align: center;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/*
+  Aqui ponemos los backgrouds por defecto
+*/
+
+/*
+  Si queremos poner margen, si no, comentamos #myCarousel
+*/
+#myCarousel{
+  margin: 2% 0 0 3%;
+}
+
+/*#myCarousel .item{
+  height: 400px;
+}*/
+
+#primeraF{
+  background: url('../Imagenes/ImgCarousel/primera.png') center no-repeat;
+}
+
+#segundaF{
+  background: url('../Imagenes/tarjetasBnear2.png') top center no-repeat;
+}
+
+#terceraF{
+  background: url('../Imagenes/tarjetasBNEARjoder.png') top center no-repeat;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/********** Dispositivos grandes **********/
+@media screen and (min-width: 991px) {
+
+}
+
+
+/* Para dispositivos pequeños: */
+@media screen and (max-width: 767px) {
+  #myCarousel{
+    margin: 0 0 0 0;
+  }
+}
+
+/* Modificación del css */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}

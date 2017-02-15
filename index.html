@@ -31,8 +31,8 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Inicio</a></li>
-          <li><a href="#">Presentacion</a></li>
+          <li class="active"><a href="#contenedorInicio">Inicio</a></li>
+          <li><a href="#contenedor1">Presentacion</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
@@ -41,7 +41,7 @@
   </nav>
     </div>
     <!-- Pagina de incio -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="contenedorInicio">
       <div class="inicio col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <!-- <div class="LogoInicio center-block"> -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -59,8 +59,76 @@
         <!-- </div> -->
       </div>
     </div>
+    <div class="container-fluid" id="contenedor1">
+      <div class="separadorInicioPresentacion col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span id="textoSeparador1">Presentacion</span>
+      </div>
+    </div>
       <!-- Pagina de presentacion -->
       <div class="presentacion">
+        <!-- Carrousel responsive
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide col-lg-5 col-md-4 col-sm-12 col-xs-12" data-ride="carousel">
+          <!-- Boolets -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active" id="primeraF">
+              <!-- <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide"> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                  <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                  <!-- En caso de querer un boton -->
+                  <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Boton</a></p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="item" id="segundaF">
+              <!-- <img src="" alt=""> -->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item" id="terceraF">
+              <!-- <img src="" alt=""> Si queremos poner una imagen-->
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>One more for good measure.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Se cierra la zona de items del carousel-->
+
+          <!--Controles-->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+
+        </div>
+        <!-- Se cierra el carousel -->
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
       </div>
       <!-- Pagina de productos -->
