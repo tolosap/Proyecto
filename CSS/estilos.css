@@ -6,7 +6,7 @@
 /*Ponemos una imagen de fondo en la pagina de inicio*/
 .inicio{
   /*Ubicacion de la imagen*/
-  background-image: url(../Imagenes/tarjetasBnear2.png);
+  background-image: url(../Imagenes/tarjetasBnearOscurecido.jpg);
 
   /* Nos aseguramos que la imagen de fondo este centrada vertical y
       horizontalmente en todo momento */
@@ -40,6 +40,7 @@
 }
 .navbar{
   margin-bottom: 0 !important;
+  border-radius: 0 !important;
 }
 /*Damos estilo al menu*/
 /*.menu{
@@ -52,7 +53,7 @@
   float: right;
   display: block;
   position: absolute;
-  margin-left: 60%;
+  margin-right: -10%;
 }
 li{
   text-decoration: none;
@@ -90,6 +91,7 @@ li{
 	padding:14px 55px;
 	text-decoration:none;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 .myButton:hover {
    background: rgba(179, 179, 179, .1);
