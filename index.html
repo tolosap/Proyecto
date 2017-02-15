@@ -33,7 +33,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#contenedorInicio">Inicio</a></li>
           <li><a href="#contenedor1">Presentacion</a></li>
-          <li><a href="#">Productos</a></li>
+          <li><a href="#contenedor2">Productos</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </div>
@@ -48,7 +48,7 @@
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
           </div>
           <!-- LogoBannerPrincipal  -->
-          <img src="Imagenes/logoBnearAzul.png" alt="Logo de Bnear" class="col-lg-6 col-md-4 col-sm-4 col-xs-4">
+          <img src="Imagenes/logoBnearAzul.png" alt="Logo de Bnear" class="col-lg-6 col-md-4 col-sm-4 col-xs-4" id="imagenLogoInicio">
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
           </div>
         </div>
@@ -64,11 +64,12 @@
         <span id="textoSeparador1">Presentacion</span>
       </div>
     </div>
+    <div class="container-fluid">
       <!-- Pagina de presentacion -->
       <div class="presentacion">
         <!-- Carrousel responsive
         ================================================== -->
-        <div id="myCarousel" class="carousel slide col-lg-5 col-md-4 col-sm-12 col-xs-12" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide col-lg-6 col-md-6 col-sm-12 col-xs-12" data-ride="carousel">
           <!-- Boolets -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -126,14 +127,20 @@
 
         </div>
         <!-- Se cierra el carousel -->
-
+        <!-- Script para que funciona el Carrousel: -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
       </div>
+    </div>
+    <!-- Separador de la pagina de presentacion y productos -->
+    <div class="container-fluid" id="contenedor2">
+      <div class="separadorPresentacionProductos col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span id="textoSeparador1">Galeria de porductos</span>
+      </div>
       <!-- Pagina de productos -->
       <div class="productos">
-
+        
       </div>
       <!-- Pagina de contacto -->
       <div class="contacto">

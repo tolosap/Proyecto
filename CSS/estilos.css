@@ -66,6 +66,9 @@ li{
   width: 10%;
   margin-left: 2%;
 }
+#imagenLogoInicio{
+  margin-top: 3% !important;
+}
 /*Damos estilo al texto de presentacion que va bajo la imagen*/
 #parrafoBajoImagen{
   color: white;
@@ -73,7 +76,7 @@ li{
   opacity: 0.9;
   /*Lo posicionamos:*/
   position: relative;
-  margin-top: 25%;
+  margin-top: 30%;
   text-align: center;
 }
 /*Damos estilo al boton que va bajo de el parrafo de la pagina principal*/
@@ -91,7 +94,7 @@ li{
 	padding:14px 55px;
 	text-decoration:none;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .myButton:hover {
    background: rgba(179, 179, 179, .1);
@@ -102,12 +105,38 @@ li{
 	top:1px;
 }
 
-/*Ponemos color al separador y le damos altura:*/
+/*Ponemos color al separador 1 y le damos altura:*/
 .separadorInicioPresentacion{
-  padding: 2.5% 0 2.5% 0;
-  background-color: #458c91;
+  padding: 1% 0 1% 0;
+  /*background-color: #458c91;*/
+  background-color: black;
+  opacity: 0.9;
   text-align: center;
 }
+
+.separadorInicioPresentacion span{
+color: white;
+font-size: 2.5em;
+opacity: 0.9;
+}
+
+/*Ponemos color al separador 1 y le damos altura:*/
+
+.separadorPresentacionProductos{
+  padding: 1% 0 1% 0;
+  /*background-color: #458c91;*/
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.separadorPresentacionProductos span{
+color: white;
+font-size: 2.5em;
+opacity: 0.9;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
