@@ -28,15 +28,14 @@
   margin: 0 0 0 0;
 }
 .container-fluid{
-  margin: 0!important;
-  padding: 0!important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 /*Damos forma y estilo a la imagen del logo de Bnear que va encima de la imagen de fondo*/
 .LogoBannerPrincipal{
   margin: auto;
   float: left;
   left: 25%;
-  margin-top: 0;
 }
 .navbar{
   margin-bottom: 0 !important;
@@ -67,7 +66,7 @@ li{
   margin-left: 2%;
 }
 #imagenLogoInicio{
-  margin-top: 3% !important;
+  margin-top: 8% !important;
 }
 /*Damos estilo al texto de presentacion que va bajo la imagen*/
 #parrafoBajoImagen{
@@ -76,7 +75,7 @@ li{
   opacity: 0.9;
   /*Lo posicionamos:*/
   position: relative;
-  margin-top: 30%;
+  margin-top: 33%;
   text-align: center;
 }
 /*Damos estilo al boton que va bajo de el parrafo de la pagina principal*/
@@ -212,4 +211,32 @@ opacity: 0.9;
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+}
+
+/*Estilo para la galeria de productos:*/
+/*Estilo para los botones de la galeria de productos*/
+.filter-button{
+  margin-top: 3% !important;
+  font-size: 1.4em !important;
+  border: 2px solid #458c91 !important;
+  border-radius: 5px !important;
+  text-align: center;
+  color: #458c91 !important;
+  margin-bottom: 2% !important;
+  margin-right: 2% !important;
+}
+.filter-button:hover{
+  border: 2px solid #458c91 !important;
+  color: #ffffff !important;
+  background-color: #458c91 !important;
+}
+.filter-button.active{
+  background-color: #458c91 !important;
+  color: white !important;
+}
+.port-image{
+  width: 100%;
+}
+.gallery_product{
+  margin-bottom: 30px;
 }
