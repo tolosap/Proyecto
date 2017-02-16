@@ -32,11 +32,12 @@
 #myCarousel{
   margin: 2% 0 0 3%;
   height: auto;
+  padding: 0 0 0 0;
 }
 
 /*Cada foto*/
 #myCarousel .item{
-  height: 450px;
+  height: 400px;
 }
 
 /*Textos dentro del carousel*/
@@ -80,7 +81,7 @@ hr{
 
 /*---------------------SLIDERS-----------------------------------------*/
 #primeraF{
-  background: url('../Imagenes/pegatinaBnear.png') center no-repeat;
+  background: url('../Imagenes/Carousel1.png') center no-repeat;
 }
 
 #segundaF{
@@ -100,11 +101,14 @@ hr{
 
 /*/-------------DISPOSITIVOS GRANDES---------------/*/
 @media screen and (min-width: 991px) {
+  /*Tamaño del carousel*/
   #myCarousel .item{
     height: 500px;
   }
+
   #myCarousel{
     margin: 2% 0 0 3%;
+    padding: 0 0 0 0;
   }
 
   .carousel-caption{
@@ -144,6 +148,7 @@ hr{
   }
   #myCarousel{
     margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
   .carousel-caption{
@@ -168,6 +173,9 @@ hr{
     color: darkgrey;
     font-size: 14px !important;
   }
+  #primeraF{
+    background: url('../Imagenes/tablet1.png') center no-repeat;
+  }
 }
 
 /*------------------------OTROS DISPOSITIVOS--------------------*/
@@ -177,6 +185,7 @@ hr{
   }
   #myCarousel{
     margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
 
   .carousel-caption{
