@@ -37,6 +37,8 @@
   float: left;
   left: 25%;
 }
+
+/*Quitamos margenes a la barra de navegacion*/
 .navbar{
   margin-bottom: 0 !important;
   border-radius: 0 !important;
@@ -49,6 +51,8 @@
   border: 1px solid black;
   display: block;
 }*/
+
+/*Pegamos los enlaces del menu a la derecha:*/
 .links{
   float: right !important;
   display: block !important;
@@ -195,5 +199,43 @@ opacity: 0.9;
     width: 18%;
     margin-left: 2%;
   }
+}
 
+/*Media query para movil:*/
+@media screen and (max-width: 767px) {
+  .myButton {
+  	background-color: transparent;
+  	-moz-border-radius: 12px;
+  	-webkit-border-radius: 12px;
+  	border-radius: 12px;
+  	border: 2px solid #ffffff;
+  	display: inline-block;
+  	cursor: pointer;
+  	color: #ffffff;
+  	font-family: Arial;
+  	font-size: 0.8em !important;
+  	padding: 7px 27px !important;
+  	text-decoration: none;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  /*Cambiamos tamaño al parrafo bajo la imagen de inicio:*/
+  #parrafoBajoImagen{
+    color: white;
+    font-size: 1.5em;
+    opacity: 0.9;
+    /*Lo posicionamos:*/
+    position: relative;
+    margin-top: 33%;
+    text-align: center;
+  }
+  .LogoBannerPrincipal{
+    margin: auto;
+    float: left;
+    left: 25%;
+  }
+  /*Cambiamos el margen superior del logo de Bnear para que no de problemas:*/
+  #imagenLogoInicio{
+    margin-top: 15% !important;
+  }
 }
