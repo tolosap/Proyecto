@@ -126,6 +126,12 @@ opacity: 0.9;
   text-shadow: 3px 3px 2px #000000;
 }
 
+/*Damos estilo al texto de sobre nosotros:*/
+#ParrafoSobreNosotros{
+  color: black;
+  
+}
+
 /*Ponemos color al separador 1 y le damos altura:*/
 
 .separadorPresentacionProductos{
