@@ -199,7 +199,20 @@ border-bottom: 2px solid #458c91;
   margin-bottom: 30px;
 }
 
-/*Pruebas para que no se baje el menu*/
+/*-----------------------------------------MEDIAQ PARA DISPO GRANDES*/
+@media screen and (min-width: 991px) {
+  #infobox3 p {
+      line-height: 58px;
+      font-size: 13px;
+      text-align: center;
+  }
+  #movilT{
+    font-size: 13px;
+  }
+}
+
+
+/*-----------------------------------------------OTROS DISPOSITIVOS*/
 @media screen and (min-width: 768px) and (max-width: 1057px) {
   .navbar-header{
     width: 40% !important;
@@ -213,9 +226,12 @@ border-bottom: 2px solid #458c91;
   .contact {
     padding: 1% 0 10% 0;
   }
+  #movilT{
+    display: none;
+  }
 }
 
-/*Media query para movil:*/
+/*-------------------------------------------------------Media query para movil:*/
 @media screen and (max-width: 767px) {
   .myButton {
   	background-color: transparent;
@@ -257,6 +273,10 @@ border-bottom: 2px solid #458c91;
     padding: 1% 0 10% 0;
   }
   #mapaMaps{
+    display: none;
+  }
+
+  #movilT{
     display: none;
   }
 }
