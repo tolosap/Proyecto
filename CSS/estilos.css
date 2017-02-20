@@ -3,7 +3,9 @@
   margin: auto;
   font-size: 16px;
 }
-
+.row{
+    margin-right: 0 !important;
+}
 /*[class*="col-"]{
   float:left;
 }*/
@@ -40,6 +42,10 @@
   margin: auto;
   float: left;
   left: 25%;
+}
+.links a{
+  color: white !important;
+  font-size: 1.2em;
 }
 
 /*Quitamos margenes a la barra de navegacion*/
@@ -229,6 +235,9 @@ border-bottom: 2px solid #458c91;
   #movilT{
     display: none;
   }
+  .links{
+    margin: auto;
+  }
 }
 
 /*-------------------------------------------------------Media query para movil:*/
@@ -278,6 +287,9 @@ border-bottom: 2px solid #458c91;
 
   #movilT{
     display: none;
+  }
+  .links{
+    margin: auto;
   }
 }
 
