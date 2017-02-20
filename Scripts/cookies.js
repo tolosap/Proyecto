@@ -1,38 +1,42 @@
-//Get cookies
-function getCookie(c_name){
-	var c_value = document.cookie;
-	var c_start = c_value.indexOf(" " + c_name + "=");
-	if (c_start == -1){
-		c_start = c_value.indexOf(c_name + "=");
-	}
-	if (c_start == -1){
-		c_value = null;
-	}else{
-		c_start = c_value.indexOf("=", c_start) + 1;
-		var c_end = c_value.indexOf(";", c_start);
-		if (c_end == -1){
-			c_end = c_value.length;
-		}
-		c_value = unescape(c_value.substring(c_start,c_end));
-	}
-	return c_value;
+function GetCookie(name) {
+    var arg=name+"=";
+    var alen=arg.length;
+    var clen=document.cookie.length;
+    var i=0;
+    while (i<clen) {
+        var j=i+alen;
+
+        if (document.cookie.substring(i,j) == arg)
+            return "1";
+        i=document.cookie.indexOf(" ",i)+1;
+        if (i==0)
+             break;
+     }
+    return null;
 }
 
-//Crear las cookies
-function setCookie(c_name,value,exdays){
-	var exdate = new Date();
-	exdate.setDate(exdate.getDate() + exdays);
-	var c_value = escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-	document.cookie = c_name + "=" + c_value;
+function aceptarCk(){
+    var expire = new Date();
+    expire = new Date(expire.getTime()+7776000000);
+    document.cookie = "cookieVisita=Si; expires=" + expire;
+
+    var visit = GetCookie("cookieVisita");
+    if (visit == 1){
+        popbox3();
+    }
 }
 
-//Si no existen la cookie de aviso, hace visible el div de cookies
-if(getCookie('avisoCookies') != "1"){
-	document.getElementById("zonacookies").style.display = "block";
-}
+jQuery(function() {
+    var visit = GetCookie("cookieVisita");
+    if (visit == 1){
+        $('#overbox3').toggle();
+    } else {
+        var expire = new Date();
+        expire = new Date(expire.getTime()+7776000000);
+        document.cookie = "cookieVisita=Si; expires=" + expire;
+    }
+});
 
-//Funcion ponerCookie
-function ponerCookie(){
-	setCookie('avisoCookies','1',365);
-	document.getElementById("zonacookies").style.display = "none";
+function popbox3() {
+    $('#overbox3').toggle();
 }

@@ -1,36 +1,28 @@
-#zonacookies {
-	display: none;
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	padding-bottom: 20px;
-	width: 100%;
-	text-align: center;
-	min-height: 40px;
-	background-color:  rgba(45, 164, 190, 0.5);
-	color: #fff;
-	z-index: 99999;
-  display: block;
-  float: left;
+#overbox3 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
 }
-
-.inner {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	padding-left: 5px;
-	font-family: verdana;
-	font-size: 14px;
-	top: 15%;
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 58px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(69, 140, 145, 0.90);
 }
-.inner a.ok {
-	padding: 4px;
-	color: #00ff2e;
-	text-decoration: none;
+#infobox3 p {
+    line-height: 58px;
+    font-size: 15px;
+    text-align: center;
 }
-.inner a.info {
-	padding-left: 5px;
-	text-decoration: none;
-	color: #faff00;
+#infobox3 p a {
+		color: white;
+		text-decoration: none;
+		margin-left: 1%;
+    margin-right: 1%;
 }
