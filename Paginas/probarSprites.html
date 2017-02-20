@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo Audio y Sprites</title>
+    <script type="text/javascript">
+      function mute(){
+        var sonido = document.getElementById('player').muted;
+        if (sonido === true){
+          document.getElementById('player').muted = false;
+        }else{
+          document.getElementById('player').muted = true;
+        }
+      }
+    </script>
+    <style media="screen">
+      .mute{
+        background: url('../Imagenes/spritesRedesSoc.png') no-repeat -5px -3px;
+      	width: 63px;
+      	height: 65px;
+        float:left;
+      }
+      .menosVol{
+        width: 128px;
+        height: 128px;
+        background: url("spritesAudio.png") no-repeat -513px -1px;
+        float:left;
+      }
+      .masVol{
+        width: 128px;
+        height: 128px;
+        background: url("spritesAudio.png") no-repeat -257px -1px;
+        float:left;
+      }
+      .play{
+        background: url("spritesAudio.png") no-repeat -769px -1px;
+	      width: 127px;
+	      height: 127px;
+        float:left;
+      }
+      .stop{
+        background: url("spritesAudio.png") no-repeat -1024px -1px;
+	      width: 129px;
+	      height: 129px;
+        float:left;
+      }
+      .mute:hover, .menosVol:hover, .masVol:hover, .stop:hover, .play:hover{
+        opacity: 0.7;
+      }
+      /* Dejamos una separación entre los enlaces */
+      .contenedor span{
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Controles audio</H1>
+    <audio id="player">
+        <!-- Audio Ogg -->
+        <source src="audio/Aretha.ogg" type="audio/ogg">
+        <!-- Audio MP3 -->
+        <source src="audio/Aretha.mp3" type="audio/mpeg"/>
+    </audio>
+    <div class="contenedor">
+      <span class="play" onclick="document.getElementById('player').play()"></span>
+      <span class="menosVol" onclick="document.getElementById('player').volume-=0.1"></span>
+      <span class="masVol" onclick="document.getElementById('player').volume+=0.1"></span>
+      <span class="mute" onclick="mute()"></span>
+      <span class="stop" onclick="document.getElementById('player').pause()"></span>
+    </div>
+  </body>
+</html>

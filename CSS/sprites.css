@@ -1,0 +1,30 @@
+.FB {
+  background: url('../Imagenes/sprites.png') no-repeat -63px -5px;
+	width: 22px;
+	height: 42px;
+  float: left;
+}
+.TW{
+  background: url('../Imagenes/sprites.png') no-repeat -10px -10px;
+	width: 46px;
+	height: 37px;
+  float: left;
+}
+.INS{
+  background: url('../Imagenes/sprites.png') no-repeat -151px -7px;
+	width: 41px;
+	height: 42px;
+  float: left;
+}
+.G{
+  background: url('../Imagenes/sprites.png') no-repeat -99px -7px;
+	width: 44px;
+	height: 40px;
+  float: left;
+}
+.FB:hover, .TW:hover, .INS:hover, .G:hover{
+  opacity: 0.7;
+}
+#enlacesSociales span{
+  margin: 3%;
+}
