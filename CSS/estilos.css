@@ -362,13 +362,19 @@ border-bottom: 2px solid #458c91;
 /*Damos estilo al pie de la pagina y a todos sus elementos:*/
 .pie{
   color: white;
-  padding: 2% 0 2% 0;
+  padding: 2% 0 3% 0;
   background-color: #458c91;
+
 }
 #derechos{
   color: white;
   float: left;
 }
 #enlacesSociales{
-  float: right;
+    right: 20px;
+    position: absolute;
+}
+#enlacesSociales a{
+  float: left;
+  margin-left: 20px;
 }
