@@ -154,21 +154,22 @@ opacity: 0.9;
 }
 
 /*Estilo para el separador de productos y contacto:*/
-.separadorProductosContacto{
-  padding: 1% 0 1% 0;
-  /*background-color: #458c91;*/
-  background-color: black;
-  opacity: 0.9;
-  text-align: center;
-  margin-top: 2%;
-}
 
-.separadorProductosContacto span{
+#tituloContacto{
 color: white;
-font-size: 2.5em;
+font-size: 2em;
 opacity: 0.9;
+margin-bottom: 3%;
+text-align: center;
+border-bottom: 2px solid #458c91;
 }
-
+#textoSeparador2{
+  color: white;
+  font-size: 2em;
+  opacity: 0.9;
+  margin-bottom: 3%;
+  text-align: center;
+}
 
 /*Estilo para la galeria de productos:*/
 /*Estilo para los botones de la galeria de productos*/
@@ -209,6 +210,9 @@ opacity: 0.9;
     width: 18%;
     margin-left: 2%;
   }
+  .contact {
+    padding: 1% 0 10% 0;
+  }
 }
 
 /*Media query para movil:*/
@@ -248,4 +252,91 @@ opacity: 0.9;
   #imagenLogoInicio{
     margin-top: 15% !important;
   }
+
+  .contact {
+    padding: 1% 0 10% 0;
+  }
+  #mapaMaps{
+    display: none;
+  }
+}
+
+/*Estilo para el formulario de contacto:*/
+.contact {
+  padding: 1% 0 5% 0;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.contact i {
+  padding: 0 20px;
+  font-size: 0.8em;
+}
+
+#comments {
+  margin-top: 0;
+}
+
+#contactform {
+  height: 215px;
+}
+
+#contactform .right {
+  float: right;
+}
+
+#contactform input,
+#contactform textarea {
+  margin-bottom: 14px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+#contactform input {
+  padding-left: 15px;
+  height: 44px;
+  border-radius: 0;
+}
+
+#contactform textarea {
+  padding: 15px;
+  height: 7%;
+  border-radius: 0;
+}
+
+#contactform .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #333;
+  background: #458c91;
+  color: #fff;
+}
+
+#contactform .btn:hover {
+  background: #2F7378;
+}
+
+#mapaMaps {
+  width: 100%;
+  height: 135px;
+  margin-bottom: 3%;
+}
+
+/*Damos estilo al pie de la pagina y a todos sus elementos:*/
+.pie{
+  color: white;
+  padding: 2% 0 2% 0;
+  background-color: #458c91;
+}
+#derechos{
+  color: white;
+  float: left;
+}
+#enlacesSociales{
+  float: right;
 }
