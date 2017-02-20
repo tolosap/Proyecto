@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  // Fomateamos el boton activo y activamos al que clickemos
+  $('.nav a').click(function () {
+
+    toggleTab($(this));
+  })
+
   var headerHeight = $('header').outerHeight();
 
   $('.slide-section').click(function(e) {
@@ -9,3 +15,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
+
+function toggleTab (hrefObjetivo) {
+  $(hrefObjetivo).tab('show');
+}
