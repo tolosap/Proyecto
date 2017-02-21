@@ -1,4 +1,4 @@
-onload = function(){
+$(document).ready(function(){
 function mostrarAyuda(e) {
   e.preventDefault();
   var dondeVaAyuda = $('.enseñaAyuda');
@@ -11,4 +11,4 @@ function mostrarAyuda(e) {
       "Mensaje: " + data.Texto.areaText + "<br>");
     });
 }
-}
+});
