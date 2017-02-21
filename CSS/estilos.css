@@ -3,6 +3,10 @@
   margin: auto;
   font-size: 16px;
 }
+#myNavbar{
+  margin-left: 0;
+  margin-right: 0;
+}
 .row{
     margin-right: 0 !important;
 }
