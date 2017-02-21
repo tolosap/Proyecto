@@ -1,6 +1,9 @@
 onload = function(){
 var formulario = document.forms[0];
-formulario.onsubmit = function(){
+var captchita = "Captcha... Introduce el codigo " + code;
+$('#laCaptcha').attr('placeholder', captchita);
+formulario.onsubmit = function(e){
+    e.preventDefaylt();
     var err = document.getElementsByClassName('errores')[0];
     var errList ="";
     var ret = true;
@@ -79,8 +82,6 @@ var d = Math.ceil(Math.random() * 9)+ '';
 var e = Math.ceil(Math.random() * 9)+ '';
 
 var code = a + b + c + d + e;
-document.getElementById("txtCaptcha").value = code;
-document.getElementById("txtCaptchaDiv").innerHTML = code;
 
 // Validate the Entered input aganist the generated security code function
 function ValidCaptcha(){
