@@ -1,5 +1,8 @@
-function obtenerJSON() {
-$.getJSON('archivo.json', function (data) {
-  console.log(data);
-  });
-}
+
+$('#needAyuda').click(function(e){
+  e.preventDefault();
+  var dondeVaAyuda = $();
+  $.getJSON('ayuda.json', function (data) {
+
+    });
+});
