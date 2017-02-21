@@ -37,6 +37,10 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+#container-carr{
+  margin: 0 0 2% 0!important;
+}
 /*Damos forma y estilo a la imagen del logo de Bnear que va encima de la imagen de fondo*/
 .LogoBannerPrincipal{
   margin: auto;
@@ -150,7 +154,6 @@ opacity: 0.9;
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  margin-top: 2%;
 }
 
 .separadorPresentacionProductos span{

@@ -5,12 +5,11 @@ $(document).ready(function(){
     toggleTab($(this));
   })
 
-  var headerHeight = $('header').outerHeight();
 
   $('.slide-section').click(function(e) {
     var linkHref = $(this).attr('href');
     $('html, body').animate({
-      scrollTop: $(linkHref).offset().top - headerHeight
+      scrollTop: $(linkHref).offset().top - 50
     },1000);
     e.preventDefault();
   });
