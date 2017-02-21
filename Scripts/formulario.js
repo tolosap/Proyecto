@@ -20,7 +20,6 @@ formulario.onsubmit = function(e){
 
     //Nombre
     var nom = document.getElementsByName('name')[0].value;
-    console.log(nom);
     if (nom == null || nom.length == 0 || !(/^\S+$/.test(nom))){
          errList += "El campo nombre es incorrecto <br/>"
          ret = false;
@@ -39,7 +38,6 @@ formulario.onsubmit = function(e){
 
     //Email
     var email = document.getElementsByName("email")[0].value;
-    console.log(email);
     if ( !/^\w+@\w+\.\w+$/.test(email) ){
       errList += "El email es incorrecto <br/>";
       ret = false;
@@ -47,7 +45,6 @@ formulario.onsubmit = function(e){
 
     //Campo de texto
     var txtArea = document.getElementsByName('name')[0].value;
-    console.log(txtArea);
     if (txtArea.length > 750){
          errList += "El campo Mensaje tiene demasiados carácteres <br/>"
          ret = false;
@@ -58,7 +55,6 @@ formulario.onsubmit = function(e){
     // Validate the Entered input aganist the generated security code function
     var str2 = document.getElementById('laCaptcha').value;
     if (str2 == code){
-      console.log("hola");
     }else{
     errList += "La captcha es incorrecta <br/>"
     ret = false;
