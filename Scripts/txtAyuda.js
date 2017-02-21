@@ -7,8 +7,7 @@ function mostrarAyuda(e) {
       "Telefono: " + data.Telefono.numero + "<br>" +
       "Email: " + data.Email.email + "<br>" +
       "Captcha: " + data.Captcha.captcha + "<br>" +
-      "Mensaje: " + data.Texto.areaText + "<br>"
-      ;
+      "Mensaje: " + data.Texto.areaText + "<br>";
     );
     });
 }
