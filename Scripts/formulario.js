@@ -4,10 +4,8 @@ var formulario = document.forms[0];
 var a = Math.ceil(Math.random() * 9)+ '';
 var b = Math.ceil(Math.random() * 9)+ '';
 var c = Math.ceil(Math.random() * 9)+ '';
-var d = Math.ceil(Math.random() * 9)+ '';
-var e = Math.ceil(Math.random() * 9)+ '';
 
-var code = a + b + c + d + e;
+var code = a + b + c;
 
 var captchita = "Captcha... Introduce el codigo " + code;
 $('#laCaptcha').attr('placeholder', captchita);
