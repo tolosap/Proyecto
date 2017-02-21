@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba Galeria</title>
+    <!-- Bootstrap -->
+      <!-- Latest compiled and minified CSS -->
+      <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<<<<<<< HEAD:productos.html
+
+        <style media="screen">
+        .gallery-title
+{
+  font-size: 36px;
+  color: #458c91;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+  font-size: 18px;
+  border: 1px solid #458c91;
+  border-radius: 5px;
+  text-align: center;
+  color: #458c91;
+  margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+  font-size: 18px;
+  border: 1px solid #458c91;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #458c91;
+
+}
+.filter-button.active
+{
+  background-color: #458c91;
+  color: white;
+}
+.port-image
+{
+  width: 100%;
+}
+
+.gallery_product
+{
+  margin-bottom: 30px;
+}
+
+        </style>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+          $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value == "all"){
+              //$('.filter').removeClass('hidden');
+              $('.filter').show('1000');
+            }else{
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+          $(".filter").not('.'+value).hide('3000');
+          $('.filter').filter('.'+value).show('3000');
+      }
+  });
+});
+        </script>
+
+        <!-- Script para que funcione la galeria: -->
+        <script src="Scripts/galeria.js" charset="utf-8"></script>
+=======
+        <link rel="stylesheet" href="../CSS/estilos.css">
+        <script src="../Scripts/galeria.js"></script>
+>>>>>>> 3f1b00edd3f85b918c995ebfd4ca510ee745a6a8:Paginas/productos.html
+        
+      </head>
+  <body>
+    <div class="container-fluid" id="contenedor2">
+      <div class="separadorPresentacionProductos col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <span id="textoSeparador1">Galería de productos</span>
+      </div>
+      <!-- Pagina de productos -->
+      <div class="productos">
+        <!-- Galeria: -->
+        <div class="container">
+          <div align="center">
+            <button class="btn btn-default filter-button active" data-filter="all">Todos</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">Tarjetas</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Pegatinas</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Llaveros</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Otros</button>
+          </div>
+          <br/>
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <img src="../Imagenes/tarjetas1.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <img src="../Imagenes/pegatinas1.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <img src="../Imagenes/tarjetas2.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="../Imagenes/otros1.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <img src="../Imagenes/llaveros1.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="../Imagenes/otros2.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <img src="../Imagenes/llaveros2.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="../Imagenes/otros3.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <img src="../Imagenes/otros4.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <img src="../Imagenes/tarjetas3.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <img src="../Imagenes/llaveros3.png" class="img-responsive">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <img src="../Imagenes/pegatinas2.png" class="img-responsive">
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

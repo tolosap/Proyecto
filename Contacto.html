@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Conacto</title>
+    <!-- Bootstrap -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+      <!-- Añadimos ajax: -->
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+      <!-- Script para el formulario: -->
+      <script type="text/javascript" src="Scripts/formulario.js"></script>
+
+<!-- Estilo para el formulario -->
+<style media="screen">
+
+</style>
+</script>
+  </head>
+  <body>
+    <div class="contacto">
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tituloContacto">
+              <span id="textoSeparador2">Contacto</span>
+            </div>
+            <div class="row">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.643362397802!2d-0.39790568508464563!3d39.454792079488556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f22a8a44f2d%3A0x9ebb5bc60cb99cad!2sIES+Juan+de+Garay!5e0!3m2!1ses!2ses!4v1487613717754" frameborder="0" allowfullscreen id="mapaMaps" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></iframe>
+            </div>
+          </div>
+          <div class="row">
+            <form method="post" action="contact.php" name="contactform" id="contactform">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <fieldset>
+                  <input name="name" type="text" id="name" size="30" placeholder="Nombre">
+                  <br>
+                  <input name="email" type="text" id="email" size="30" placeholder="Email">
+                  <br>
+                  <input name="phone" type="text" id="phone" size="30" placeholder="Telefono">
+                  <br>
+                  <!-- placeholder="Captcha... Cuanto es 2+2?" -->
+                  <input name="human" type="text" id="laCaptcha" size="30" placeholder="">
+                  <a href="" id="needAyuda" onclick="mostrarAyuda(event)">¿Tienes alguna duda?</a>
+                  <div class="enseñaAyuda">
+
+                  </div>
+                </fieldset>
+                <div class="errores">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <fieldset>
+                  <textarea name="comments" cols="40" rows="20" id="comments" placeholder="Mensaje"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <fieldset>
+                  <button type="submit" class="btn btn-lg" id="submit" value="Submit">Enviar</button>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
