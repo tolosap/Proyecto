@@ -28,3 +28,11 @@
 #enlacesSociales span{
   margin: 3%;
 }
+
+/*-----------------------------DISPOSITIVOS PEQUEÑOS----------
+-----------------------------------------*/
+@media screen and (max-width: 767px) {
+  #enlacesSociales{
+    display: none;
+  }
+}
