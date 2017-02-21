@@ -1,0 +1,23 @@
+{
+  "Nombre":[
+    {"text":"Nombre debe ser una cadena de caracteres de 1 a 20."}
+  ],
+  "Telefono":[
+    {"numero":"Debe ser una cadena numerica de longitud 9 ó 10."}
+  ],
+  "Captcha":[
+    {
+      "captcha":"En el Captcha debe introducirse el número que se encuentra en la caja de texto."
+    }
+  ],
+  "Email":[
+    {
+      "email":"Email debe corresponder al siguiente formato: sartenes@NFC.com"
+    }
+  ],
+  "Texto":[
+    {
+      "areaText":"No deben superarse los 750 caracteres."
+    }
+  ]
+}

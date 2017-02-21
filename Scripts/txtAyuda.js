@@ -1,8 +1,14 @@
-
-$('#needAyuda').click(function(e){
+function mostrarAyuda(e) {
   e.preventDefault();
-  var dondeVaAyuda = $();
+  var dondeVaAyuda = $('.enseñaAyuda');
   $.getJSON('ayuda.json', function (data) {
-
+    $('.enseñaAyuda').html(
+      "Nombre: " + data.Nombre.text + "<br>" +
+      "Telefono: " + data.Telefono.numero + "<br>" +
+      "Email: " + data.Email.email + "<br>" +
+      "Captcha: " + data.Captcha.captcha + "<br>" +
+      "Mensaje: " + data.Texto.areaText + "<br>"
+      ;
+    );
     });
-});
+}
