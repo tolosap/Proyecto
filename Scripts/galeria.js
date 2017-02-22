@@ -1,4 +1,4 @@
-$(document).ready(function(){
+//$(document).ready(function(){
   $(".filter-button").click(function(){
     // Para borrar la clase active que hace que el boton activo tenga unas propiedades CSS:
     var botonActivo = $('button').filter('.active');
@@ -13,4 +13,4 @@ $(document).ready(function(){
   $('.filter').filter('.'+value).show('3000');
 }
 });
-});
+//});

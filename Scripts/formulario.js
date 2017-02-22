@@ -1,4 +1,4 @@
-onload = function(){
+
 var formulario = document.forms[0];
 //Generates the captcha function
 var a = Math.ceil(Math.random() * 9)+ '';
@@ -10,7 +10,7 @@ var code = a + b + c;
 var captchita = "Captcha... Introduce el codigo " + code;
 $('#laCaptcha').attr('placeholder', captchita);
 
-formulario.onsubmit = function(e){
+botoncito.onclick = function(e){
     e.preventDefault();
     var err = document.getElementsByClassName('errores')[0];
     var errList ="";
@@ -69,5 +69,4 @@ formulario.onsubmit = function(e){
 
     err.innerHTML = errList;
     return ret;
-}
 }
